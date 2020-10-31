@@ -14,5 +14,10 @@ navReturn.addEventListener('mouseleave', event => {
     event.target.style.background = 'white'
 });
 
-const form = document.querySelector('form');
-form.addEventListener('reset');
+function logReset(event) {
+    log.textContent = `Enter new Destination!`;
+}
+const form = document.querySelector('#form');
+const log = document.querySelector('#log');
+form.addEventListener('reset',logReset);
+
