@@ -34,3 +34,9 @@ function logSubmit(event) {
 const formTwo = document.querySelector('#form2');
 const log2 = document.querySelector('#log2');
 formTwo.addEventListener('submit',logSubmit);
+
+//context menu
+const noSteal = document.querySelector('#steal');
+noSteal.addEventListener('contextmenu', event => {
+    event.preventDefault();
+})
