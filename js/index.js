@@ -56,3 +56,19 @@ document.addEventListener('keydown', logKey);
 function logKey(e) {
   text.textContent += ` ${e.code}`;
 }
+
+//focus
+const password = document.querySelector('input[type = "password"]');
+password.addEventListener('focus', event => {
+    event.target.style.background = 'skyblue';
+});
+password.addEventListener('blur', event => {
+    event.target.style.background = '';
+});
+
+//change 
+const selectEl = document.querySelector('.vacation');
+selectEl.addEventListener('change', event => {
+    const result = document.querySelector('.result');
+    result.textContent = `You chose ${event.target.value}!`;
+})
