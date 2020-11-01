@@ -40,3 +40,12 @@ const noSteal = document.querySelector('#steal');
 noSteal.addEventListener('contextmenu', event => {
     event.preventDefault();
 })
+
+//select
+function logSelect(event) {
+    const logs = document.querySelector('#log3');
+    const selection = event.target.value.substring(event.target.selectStart, event.target.selectEnd);
+    logs.textContent = `You have selected ${selection} as your destination!`;
+}
+const input = document.querySelector('input');
+input.addEventListener('select', logSelect)
