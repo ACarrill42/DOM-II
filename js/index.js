@@ -48,4 +48,11 @@ function logSelect(event) {
     logs.textContent = `You have selected ${selection} as your destination!`;
 }
 const input = document.querySelector('input');
-input.addEventListener('select', logSelect)
+input.addEventListener('select', logSelect);
+
+//key down
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  text.textContent += ` ${e.code}`;
+}
