@@ -30,7 +30,7 @@
       </nav>
     </div>
   </header>
-     
+  
   <div class="container home">
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand">
@@ -39,7 +39,6 @@
     </header>
     <br>
     <input placeholder="Enter your destination" name="name"/>
-    <br>
     <br>
     <p id="values"></p>
     <section class="content-section">
@@ -88,8 +87,20 @@
     </section>
   </div><!-- container -->
 
+  <br>
+  <form id="form">
+    <label>Test field: <input type="text"></label>
+    <br><br>
+    <button type="submit">Submit form</button>
+  </form>
+  <p id="log"></p>
+  <br> 
+
   <footer class="footer">
     <p>Copyright Fun Bus 2020</p>
+    <p>Resize browser for <code>resize</code> event.</p>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
   </footer>
 
 </body>
