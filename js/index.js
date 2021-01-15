@@ -23,3 +23,14 @@ input.addEventListener('input', e => {
 document.addEventListener('keydown', e => {
     console.log(`${e.code}`)
 })
+
+//mouseenter
+const header = document.querySelector('header');
+header.addEventListener('mouseenter', e => {
+    e.target.style.background = "grey"
+})
+
+//mouseleave
+header.addEventListener('mouseleave', e => {
+    e.target.style.background = "white"
+})
